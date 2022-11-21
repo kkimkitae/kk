@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ticket</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <br>
+                    <h1 id="clock" >clock</h1>
+    <script>
+        var Target = document.getElementById("clock");
+        function clock() {
+            var time = new Date();
+
+            var month = time.getMonth();
+            var date = time.getDate();
+            var day = time.getDay();
+            var week = ['일', '월', '화', '수', '목', '금', '토'];
+
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+
+            Target.innerText = 
+            `${month + 1}월 ${date}일 ${week[day]}요일 ` +
+            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+                
+        }
+        clock();
+        setInterval(clock, 1000); // 1초마다 실행
+    </script>
+                </div>
+            </div>
+        </header>
+        <!-- Section-->
+        <section class="py-5">
+            <div class="container px-4 px-lg-5 mt-5">
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="yes.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder"><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=CUVMp7NN0Y8XTJ-G-igbbv6bQDojGyuRh1rOH88QQ1vGhxcYKCAAQASC5VGCbg-mEnCmgAbrF9PcDyAEBqQKkfpM6LusJPsgD2CCqBFxP0M8EcGsmt0Mr1iQNb1pO2aA095p_mKKJCGsVRFXTS7h_wUegrMBws8PnAUNtFtQBJukgReMsAsqCjC921kBp9LljVdk3qTjBUTC4ldSJEwbOKAcYiOW_6LTkBsAEtuW4ohCABZBOiAXu9sQboAZmgAeuuosIiAcBkAcBqAemvhuoB7masQKoB_PRG6gH7tIbqAf_nLECqAfK3BuoB4-psQKoB7uksQKoB9imsQKoB9uqsQKoB9CqsQKgCOv0PrAIAdIIGhACIIQBMgSDwIAOOgqAgICAgICAqAECQgEEmgkYaHR0cDovL3RpY2tldC55ZXMyNC5jb20vsQkKe1XkeMFn5bkJCntV5HjBZ-X4CQGYCwGqDAIIAbgMAegMBqoNAktSghQPCAMSC3llczI07Yuw7LyTyBSB_qmQsvXN8kTQFQGYFgH4FgGAFwGSFwgSBggBEAMYOeAXAg&ae=2&ved=2ahUKEwif0s-11rL7AhX4lFYBHQ-eBgoQ0Qx6BAgIEAE&dct=1&cid=CAASFeRolsE8dQKqonJd6weClOMdQ9NBmA&dblrd=1&sival=AF15MEBIf0EaTO8B1KHhZ2Yhs_ULuppZy5IbN1qjX6QtkLXtezGk2Sv9hEX_kmgFLU7tyTO6RorhaaQrntsqqOEmK-q2uvPyqdY9fKPECKUhcRJvIkDTfKGXvxXxX85gV6Fg2vhwo2rPz5N_bfsX-QjH5ajq0iYVmK8qO6DhGCKIAFl1063S8C6bZszU7FAcBZRvsN516c0X&sig=AOD64_2UkL1e05qmkQi21hVheEWYhbLfCQ&adurl=http://ticket.yes24.com/%3Fsite_pid%3Dcp03ud87p%26cosemkid%3Dgo14913770438697498" target='_blank'>yes24</a></h5>
+                                    <br>
+                                    <!-- 모달창 1 -->
+                                    <style type="text/css">
+                                        @import url("modal.css");
+                                    </style>
+                                    <button class="openBtn"> 설명 보기 </button>
+                                    <div class="modal hidden">
+                                    <div class="bg"></div>
+                                    <div class="modalBox">
+                                        <pre>
+var url = 'http://ticket.yes24.com/Pages/Perf/Sale/PerfSaleProcess.aspx?IdPerf=<b>예매번호</b>'
+var form = $("form");
+var target = 'pop_perfsale';
+http://window.open(url, target, "width=1000,height=700,resizable=yes,toolbar=yes,menubar=yes,location=yes");
+form.attr('action', url);
+form.attr('target', target); 
+form.attr('method', 'post');
+var hiddenField = document.createElement("input");
+hiddenField.setAttribute("type", "hidden");
+hiddenField.setAttribute("name", "netfunnel_key");
+hiddenField.setAttribute("value",'EA202F12A44A482CDB2C9B6B3714C515670AE295258DA2E11FD2C49E876F38AF43040E5176518957FEA1C8131DF62912030A0B591FCB75E22E5BA0994B2C04A67B5B8C90DB517CEF4F5E1205D86EA04F35CFEBCA30FBACC72BC03F89DC9B691D342C312C312C30');
+form.append(hiddenField);
+document.body.append(form);
+form.submit();
+ </pre>
+                                    <button class="closeBtn">✖</button>
+                                    </div>
+                                    </div>
+
+                                    <script>
+                                    const open = () => {
+                                                        document.querySelector(".modal").classList.remove("hidden");
+                                      }
+
+                                    const close = () => {
+                                                        document.querySelector(".modal").classList.add("hidden");
+                                        }
+
+                                        document.querySelector(".openBtn").addEventListener("click", open);
+                                        document.querySelector(".closeBtn").addEventListener("click", close);
+                                        document.querySelector(".bg").addEventListener("click", close);
+
+                                    </script>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <!-- Product image-->
+                            <img class="card-img-top" src="inter.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder"> <a href="http://ticket.interpark.com" target='_blank'> 인터 파크 </a></h5>
+                                    <br>
+                                    <!-- 첫번째-->
+
+
+                                    <button class="openBtn1"> 설명 보기 </button>
+                                   <div class="modal1 hidden1">
+                                   <div class="bg1"></div>
+                                   <div class="modalBox1">
+                                       <p>https://poticket.interpark.com/Book/BookSession.asp?GroupCode=<b>예매코드</b>&Tiki=&Point=&&BizCode=&BizMemberCode=&WynsCode=394be87ff8332b8b303f6dcd64cee63e.791782875161710592&WynsGateID=gate
+                                       </p>
+                                   <button class="closeBtn1">✖</button>
+                                   </div>
+                                   </div>
+
+                                   <script>
+                                   const open1 = () => {
+                                                       document.querySelector(".modal1").classList.remove("hidden1");
+                                     }
+
+                                   const close1 = () => {
+                                                       document.querySelector(".modal1").classList.add("hidden1");
+                                       }
+
+                                       document.querySelector(".openBtn1").addEventListener("click", open1);
+                                       document.querySelector(".closeBtn1").addEventListener("click", close1);
+                                       document.querySelector(".bg1").addEventListener("click", close1);
+
+                                   </script>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <!-- Product image-->
+                            <img class="card-img-top" src="sport.jpg" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder"> <a href="http://ticket.interpark.com/Contents/Sports" target='_blank'> 인터파크 스포츠</a> </h5>
+                                   <br>
+
+                                   <!-- 두번째 -->
+                                   <button class="openBtn2"> 설명 보기 </button>
+                                   <div class="modal2 hidden2">
+                                   <div class="bg2"></div>
+                                   <div class="modalBox2">
+                                       <p>https://poticket.interpark.com/SportsBook/BookSession.asp?GroupCode=<b>경기코드</b>&Point=&Tiki=&PlayDate=<b>경기날짜</b>&PlaySeq=001&BizCode=&BizMemberCode=&WynsCode=394be87ff8332b8b303f6dcd64cee63e.791782875161710592&WynsGatelD=
+
+                                        <br><br><br>
+                                        개발자 모드로 GroupCode 값이나<br> GoodsCode 찾아서 넣기
+                                       </p>
+                                   <button class="closeBtn2">✖</button>
+                                   </div>
+                                   </div>
+
+                                   <script>
+                                   const open2 = () => {
+                                                       document.querySelector(".modal2").classList.remove("hidden2");
+                                     }
+
+                                   const close2 = () => {
+                                                       document.querySelector(".modal2").classList.add("hidden2");
+                                       }
+
+                                       document.querySelector(".openBtn2").addEventListener("click", open2);
+                                       document.querySelector(".closeBtn2").addEventListener("click", close2);
+                                       document.querySelector(".bg2").addEventListener("click", close2);
+
+                                   </script>
+
+
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Product image-->
+                            <img class="card-img-top" src="melon.png" alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder"> <a href="https://ticket.melon.com/main/index.htm" target='_blank'> 멜론 </a></h5>
+                                    <br>
+                                    <!-- 세번째-->
+
+
+                                    <button class="openBtn3"> 설명 보기 </button>
+                                   <div class="modal3 hidden3">
+                                   <div class="bg3"></div>
+                                   <div class="modalBox3">
+                                       <p>
+                                        
+                                        <strong> 날짜 고르는게 있을 때 </strong>
+                                        <br><br>
+                                        var 날짜 = setInterval(function() {
+
+                                        console.log('날짜 타이머');
+                                        
+                                        if(document.querySelectorAll('li.item_date')[0] != null ) {
+                                        
+                                        document.querySelectorAll('li.item_date')[0].click();
+                                        
+                                        clearInterval(날짜); 
+                                        
+                                        }}, 5);
+                                        
+                                        var 시간 = setInterval(function() {
+                                        
+                                        console.log('시간 선택 타이머');
+                                        
+                                        if(document.querySelectorAll('li.item_time')[0] != null ) {
+                                        
+                                        document.querySelectorAll('li.item_time')[0].click();
+                                        
+                                        document.querySelector('.button.btColorGreen').click();
+                                        
+                                        clearInterval(시간); 
+                                        
+                                        }}, 100);
+
+                                        <br><br>
+                                        <b> 날짜 고르는게 없을 때 </b>
+                                        <br><br>
+
+                                        var 선택 = setInterval(function() {
+                                            console.log("클릭 중 입니다.");
+                                            document.querySelector('.button.btColorGreen').click();
+                                    
+                                            clearInterval(선택); 
+                                            }, 100);  
+                                    
+                                    </p>
+                                   <button class="closeBtn3">✖</button>
+                                   </div>
+                                   </div>
+
+                                   <script>
+                                   const open3 = () => {
+                                                       document.querySelector(".modal3").classList.remove("hidden3");
+                                     }
+
+                                   const close3 = () => {
+                                                       document.querySelector(".modal3").classList.add("hidden3");
+                                       }
+
+                                       document.querySelector(".openBtn3").addEventListener("click", open3);
+                                       document.querySelector(".closeBtn3").addEventListener("click", close3);
+                                       document.querySelector(".bg3").addEventListener("click", close3);
+
+                                   </script>
+
+
+
+
+
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            
+
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <textarea style="position:absolute;top:30%;left:85%;transform: translate(-50%, -50%)" cols="40" rows="10" placeholder="코드 연습장"></textarea>
+        <!-- Footer-->
+
+
+
+
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white"> 무단 공유 X 공유시 서버 닫음 </p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
